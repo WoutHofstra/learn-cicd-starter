@@ -9,8 +9,9 @@ jobs:
     name: Tests
     runs-on: ubuntu-latest
 
+  style:
     name: Style
-    runs: test -z $(go fmt ./...)
+    run: test -z $(go fmt ./...)
 
     steps:
       - name: Check out code
