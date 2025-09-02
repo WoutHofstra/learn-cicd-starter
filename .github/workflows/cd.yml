@@ -37,9 +37,9 @@ jobs:
         uses: google-github-actions/setup-gcloud@v3
         with:
           version: '>= 363.0.0'
-        project_id: notely-470914
-        service_account_key: ${{ secrets.GCP_CREDENTIALS }}
-        export_default_credentials: true
+          project_id: notely-470914
+          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
+          export_default_credentials: true
 
       - name: Verify gcloud CLI
         run: gcloud info
