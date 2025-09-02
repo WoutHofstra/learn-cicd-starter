@@ -9,6 +9,9 @@ jobs:
     name: Tests
     runs-on: ubuntu-latest
 
+    name: Style
+    runs: test -z $(go fmt ./...)
+
     steps:
       - name: Check out code
         uses: actions/checkout@v4
